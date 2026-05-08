@@ -1,0 +1,23 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "Just testing with Jest",
+  "homepage": "https://github.com/Shania-a/testing-with-jest#readme",
+  "bugs": {
+    "url": "https://github.com/Shania-a/testing-with-jest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shania-a/testing-with-jest.git"
+  },
+  "license": "MIT",
+  "author": "Shania Amin",
+  "type": "git",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  }
+}
