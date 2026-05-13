@@ -21,5 +21,5 @@ const stack = require('../src/stack');
 test('peek should not remove element from stack', () => {
     stack.push('Stannar kvar');
     stack.peek();
-    expect(stack.pop()).toBe(null);
+    expect(stack.pop()).toBe('Stannar kvar');
 });

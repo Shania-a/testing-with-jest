@@ -40,8 +40,8 @@ test('Page title should be correct', async () => {
     await driver.get('file://' + __dirname + '/../dist/index.html');
     let title = await driver.getTitle();
     
-    // Detta kommer FAILA för att titeln är "En stack"
-    expect(title).toBe('Helt Fel Titel'); 
+    // Detta kommer att PASSA för att titeln är "En stack"
+    expect(title).toBe('En stack');
 });
 
 // Kollar så att stacken i startläget är n/a
@@ -49,7 +49,7 @@ describe('Initial UI State', () => {
     it('should show n/a as the initial stack value', async () => {
         let stackText = await driver.findElement(By.id('top_of_stack')).getText();
         
-        // Detta kommer FAILA för att texten är "n/a"
-        expect(stackText).toBe('Stacken är full');
+        // Detta kommer att PASSA för att texten är "n/a"
+        expect(stackText).toBe('n/a');
     });
 });
